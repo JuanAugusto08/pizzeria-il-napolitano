@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria pizze Il Napoletano</title>
+    <meta
+      name="description"
+      content="Pizza il Napoletano: auténticas pizzas inspiradas en la tradición italiana, elaboradas con ingredientes frescos y masa artesanal en Argentina. Disfrutá el verdadero sabor napolitano en cada pedido."
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.all.min.js
+"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-container">
+        <div id="logo">
+          <img
+            src="img/Logotipo.-Pizza-il-Napoletano.webp"
+            alt="Logo de Pizzeria pizze il napoletano"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">NOSOTROS</a></li>
+            <li><a href="">SUCURSALES & DELIVERY</a></li>
+            <li><a href="">CONTACTO</a></li>
+            <li><a href="">PROMOS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="animate__animated animate__backInDown brand-header">
+        Pizza il Napoletano
+      </h1>
+
+      <h2 class="animate__animated animate__backInLeft">NUESTRAS PIZZAS</h2>
+      <ul class="gallery">
+        
+      </ul>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Sucursales & Delivery</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Promos</a></li>
+            <li><a href="">Politica de privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+
+        <div class="footer-copyright">
+          <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Botón flotante de WhatsApp -->
+    <a
+      href="https://wa.me/5491162345678?text=%C2%A1Hola!%20%F0%9F%91%8B%20Me%20gustar%C3%ADa%20pedir%20una%20pizza.%20%C2%BFCu%C3%A1l%20es%20el%20men%C3%BA%20disponible%20y%20hacen%20env%C3%ADos%20a%20domicilio%3F"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="whatsapp-tooltip">¡Chateá con nosotros!</span>
+    </a>
+<script>
+  let preciosCarrito=[];
+
+
+function calcularPrecio(pizza){
+
+preciosCarrito.push(pizza.precio);
+console.log(`Precios en el carrito: ${preciosCarrito}`);
+let total = 0;
+
+    preciosCarrito.forEach(precio => {
+       total=total+p;
+    });
+
+    console.log(total);
+
+}
+
+
+
+
+
+function abrirModal(pizza) {
+
+
+
+
+            Swal.fire({
+
+                title: pizza.nombre,
+                html: ` <img src="${pizza.imagen}"
+                      alt="${pizza.nombre}"
+                    style="width:100%; border-radius:8px; margin-bottom:12px">
+                    <p style="color:#555; font-size:1rem; margin-bottom:12px">
+                        ${pizza.descripcion}
+                    </p>
+                    <p style="color:#135D76; font-size:2rem; font-weight:bold; margin:0">
+                        $ ${pizza.precio.toLocaleString('es-AR')}
+                    </p>  `,
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#0D7139',
+                width: '500px'
+
+            });
+
+
+        }
+async function cargarProductos() {
+// Cargar el archivo JSON
+try{
+const response = await fetch('products.json');
+const data = await response.json();
+console.log(data);
+const gallery=document.querySelector('.gallery');
+gallery.innerHTML='';
+data.productos.forEach(pizza=>{
+const li=document.createElement('li');
+  li.innerHTML = `
+        <div class="box">
+            <figure>
+                <img class="img-clickeable" src ="${pizza.imagen}" alt="${pizza.nombre}">
+                <figcaption>
+                    <h3>${pizza.nombre}</h3>
+                    <p>$ ${pizza.precio.toLocaleString('es-AR')}</p>
+                    <time>${pizza.fecha}</time>
+                </figcaption>
+            </figure>
+
+            <button
+                class="button"
+                value="${pizza.id}"
+                data-price="${pizza.precio}">
+                Añadir al carrito
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>`;
+        const img = li.querySelector('.img-clickeable');
+img.addEventListener('click', () => abrirModal(pizza));              
+gallery.appendChild(li);
+const btn = li.querySelector('.button');
+btn.addEventListener('click', () => calcularPrecio(pizza));
+
+}); // End of forEach
+
+} // End of try
+catch(error){
+console.error('Error al cargar productos:', error);                                                                                                                                                                                                                                
+}  // End of catch
+} // End of Function
+document.addEventListener('DOMContentLoaded', cargarProductos);
+
+</script>
+  </body>
+</html>
