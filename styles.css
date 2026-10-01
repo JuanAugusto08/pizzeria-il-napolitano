@@ -2,6 +2,10 @@
     --color-nav: #333333;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: #ffffff;
 }
@@ -9,9 +13,9 @@ body {
 #header-container {
     display: flex;
     justify-content: space-between;
-    margin: 12px 0 0 0;
+    margin: 0.75rem 0 0 0;
     font-family: "Oswald", sans-serif;
-    padding: 10px 20px 10px 20px;
+    padding: 0.625rem 1.25rem 0.625rem 1.25rem;
 }
 
 nav ul li {
