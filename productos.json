@@ -47,5 +47,12 @@
     "fecha": "22/9/2026",
     "imagen": "img/napolitana.webp",
     "descripcion": "Pizza napolitana con salsa de tomate y albahaca"
+  },
+  {
+    "nombre": "Pizza San Martin",
+    "precio": 20500,
+    "fecha": "22/10/2026",
+    "imagen": "",
+    "descripcion": "Pizza Muzzarella con aceitunas negras y morrones asados"
   }
 ]
