@@ -52,7 +52,7 @@
     "nombre": "Pizza San Martin",
     "precio": 20500,
     "fecha": "22/10/2026",
-    "imagen": "",
+    "imagen": "img/pizza_san_martin.webp",
     "descripcion": "Pizza Muzzarella con aceitunas negras y morrones asados"
   }
 ]
