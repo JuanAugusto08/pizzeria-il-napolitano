@@ -3,21 +3,21 @@
     "nombre": "Pizza de Mozarella",
     "precio": 11730,
     "fecha": "22/9/2026",
-    "imagen": "img/mozarella.webp",
+    "imagen": "img/mozzarella.webp",
     "descripcion": "Pizza de Mozarella con salsa de tomate y albahaca"
   },
   {
     "nombre": "Pizza de cuatro quesos",
     "precio": 24480,
     "fecha": "22/9/2026",
-    "imagen": "img/cuatro-quesos.webp",
+    "imagen": "img/cuatro_quesos.webp",
     "descripcion": "Pizza de cuatro quesos con salsa de tomate y albahaca"
   },
   {
     "nombre": "Pizza de morrón",
     "precio": 14790,
     "fecha": "22/9/2026",
-    "imagen": "img/morron.webp",
+    "imagen": "img/morrón.webp",
     "descripcion": "Pizza de Morrón con salsa de tomate y albahaca"
   },
   {
@@ -31,7 +31,7 @@
     "nombre": "Pizza de champiñones",
     "precio": 15300,
     "fecha": "22/9/2026",
-    "imagen": "img/champinones.webp",
+    "imagen": "img/champiñones.webp",
     "descripcion": "Pizza de Champiñones con salsa de tomate y albahaca"
   },
   {
@@ -54,5 +54,12 @@
     "fecha": "22/10/2026",
     "imagen": "img/pizza_san_martin.webp",
     "descripcion": "Pizza Muzzarella con aceitunas negras y morrones asados"
-  }
+  },
+  {
+    "nombre": "Pizza Italiana",
+    "precio": 40000,
+    "fecha": "3/11/2026",
+    "imagen": "img/pizza_italiana.webp",
+    "descripcion": "Pizza de Muzzarella, Champignones, palmitos y salsa de puerros"
+ }
 ]
