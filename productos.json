@@ -1,10 +1,10 @@
 [
   {
-    "nombre": "Pizza de Mozarella",
+    "nombre": "Pizza de Mozzarella",
     "precio": 11730,
     "fecha": "22/9/2026",
     "imagen": "img/mozzarella.webp",
-    "descripcion": "Pizza de Mozarella con salsa de tomate y albahaca"
+    "descripcion": "Pizza de Mozzarella con salsa de tomate y albahaca"
   },
   {
     "nombre": "Pizza de cuatro quesos",
@@ -61,5 +61,5 @@
     "fecha": "3/11/2026",
     "imagen": "img/pizza_italiana.webp",
     "descripcion": "Pizza de Muzzarella, Champignones, palmitos y salsa de puerros"
- }
+  }
 ]
